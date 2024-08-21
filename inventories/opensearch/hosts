@@ -5,5 +5,9 @@ os2 ansible_host=3.85.169.23  ansible_user=ec2-user ip=3.85.169.23 ansible_ssh_p
 os1
 os2
 
+[master]
+os1
+os2
+
 [dashboards]
 os1
