@@ -1,5 +1,5 @@
-os1 ansible_host=3.89.252.88  ansible_user=ec2-user ip=3.89.252.88 roles=data,master,ingest,client
-os2 ansible_host=3.85.169.23  ansible_user=ec2-user ip=3.85.169.23 roles=data,master,ingest,client
+os1 ansible_host=3.89.252.88  ansible_user=ec2-user ip=3.89.252.88 ansible_ssh_private_key_file=~/key.pem roles=data,master,ingest,client 
+os2 ansible_host=3.85.169.23  ansible_user=ec2-user ip=3.85.169.23 ansible_ssh_private_key_file=~/key.pem roles=data,master,ingest,client
 
 [os-cluster]
 os1
