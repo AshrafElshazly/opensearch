@@ -6,10 +6,10 @@
 ##
 ## You should always set the min and max JVM heap
 ## size to the same value. For example, to set
-## the heap to 4 GB, set:
+## the heap to 1 GB, set:
 ##
-## -Xms4g
-## -Xmx4g
+## -Xms1g
+## -Xmx1g
 ##
 
 ##
