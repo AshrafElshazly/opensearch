@@ -1,5 +1,5 @@
-os1 ansible_host=10.0.1.1  ansible_user=root ip=10.0.1.1 roles=data,master
-os2 ansible_host=10.0.1.2  ansible_user=root ip=10.0.1.2 roles=data,master
+os1 ansible_host=3.89.252.88  ansible_user=ec2-user ip=3.89.252.88 roles=data,master,ingest,client
+os2 ansible_host=3.85.169.23  ansible_user=ec2-user ip=3.85.169.23 roles=data,master,ingest,client
 
 [os-cluster]
 os1
