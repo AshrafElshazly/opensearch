@@ -1,0 +1,21 @@
+---
+- name: Opensearch installation & configuration
+  become: true
+  gather_facts: true
+  hosts: os-cluster
+  roles:
+    - { role: java }
+
+- name: Opensearch installation & configuration
+  become: true
+  gather_facts: true
+  hosts: os-cluster
+  roles:
+    - { role: opensearch }
+
+- name: Opensearch dashboards installation & configuration
+  become: true
+  gather_facts: true
+  hosts: dashboards
+  roles:
+    - { role: dashboards }

@@ -1,0 +1,23 @@
+---
+- name: Install Java 8 on Red Hat-based systems
+  yum:
+    name: java-1.8.0-openjdk
+    state: present
+  when: ansible_os_family == "RedHat"
+
+- name: Install Java 8 on Debian-based systems
+  apt:
+    name: openjdk-8-jdk
+    state: present
+    update_cache: yes
+  when: ansible_os_family == "Debian"
+
+- name: Verify Java installation
+  command: java -version
+  register: java_version_output
+  ignore_errors: true
+
+- name: Fail if Java installation did not succeed
+  fail:
+    msg: "Java 8 installation failed."
+  when: java_version_output.rc != 0

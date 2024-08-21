@@ -1,0 +1,9 @@
+os1 ansible_host=10.0.1.1  ansible_user=root ip=10.0.1.1 roles=data,master
+os2 ansible_host=10.0.1.2  ansible_user=root ip=10.0.1.2 roles=data,master
+
+[os-cluster]
+os1
+os2
+
+[dashboards]
+os1
