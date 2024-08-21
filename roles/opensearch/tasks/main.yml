@@ -22,8 +22,8 @@
 - name: Include opensearch installation
   ansible.builtin.import_tasks: opensearch.yml
 
-# - name: Include security plugin for opensearch
-#   ansible.builtin.import_tasks: security.yml
+- name: Include security plugin for opensearch
+  ansible.builtin.import_tasks: security.yml
 
 # After the cluster forms successfully for the first time,
 # remove the cluster.initial_master_nodes setting from each nodes' configuration.
